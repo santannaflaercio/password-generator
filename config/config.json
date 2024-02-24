@@ -1,5 +1,5 @@
 {
-  "password_length": 20,
+  "password_length": 16,
   "allowed_digits": "0123456789",
   "default_characters": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
   "allowed_symbols": "!@#$%^&*()-_=+,.<>/?",

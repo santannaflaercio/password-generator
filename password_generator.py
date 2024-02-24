@@ -1,5 +1,6 @@
 import json
 import random
+import sys
 
 # Open and load the JSON configuration file
 with open("config/config.json", "r") as f:
@@ -9,8 +10,13 @@ with open("config/config.json", "r") as f:
 specific_requirements = config_json["specific_requirements"]
 number_of_passwords = config_json["number_of_passwords"]
 
+# Check if the user has provided a password length as a command-line argument, else use the default length
+password_length = int(sys.argv[1]) \
+    if sys.argv[1].isdigit() and 6 >= len(sys.argv) <= 32 \
+    else config_json["password_length"]
 
-def generate_password():
+
+def generate_password(length=password_length):
     """
     Function to generate a password based on the configuration file.
 
@@ -32,7 +38,7 @@ def generate_password():
         characters += config_json["allowed_symbols"]
 
     # Generate a password of the specified length from the characters
-    password = "".join(random.choice(characters) for _ in range(config_json["password_length"]))
+    password = "".join(random.choice(characters) for _ in range(length))
     return password
 
 
