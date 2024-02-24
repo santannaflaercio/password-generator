@@ -1,0 +1,11 @@
+{
+  "password_length": 20,
+  "allowed_digits": "0123456789",
+  "default_characters": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "allowed_symbols": "!@#$%^&*()-_=+,.<>/?",
+  "number_of_passwords": 1,
+  "specific_requirements": {
+    "digits": true,
+    "symbols": true
+  }
+}
