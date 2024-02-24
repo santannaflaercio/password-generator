@@ -8,20 +8,19 @@ This repository hosts a streamlined password generator capable of producing secu
 length. Crafted in Python, this versatile tool functions both as an independent script and as an importable module for
 integration into various Python-based applications.
 
-#### How to Run
+### How to Run
 
-To operate the password generator independently, execute the `password_generator.py` script via the command line. You
-can determine the password’s length by providing a numerical argument. For instance:
+To operate the password generator independently, execute the `password_generator.py` script via the command line. For
+instance:
 
 ```bash
-python password_generator.py 12
+python password_generator.py
 ```
 
-This script generates a random password with a default length of 12 characters and outputs it to the console. If no
-length is specified, or if the provided length is less than 6 or more than 32 characters, it will default to a secure
-16-character password.
+This script produces a secure, random password determined by the `password_length` parameter specified in
+the `config.json` file.
 
-#### Future Development
+### Future Development
 
 The script is fully operational, yet it holds the potential for several future upgrades to elevate its functionality:
 
@@ -36,7 +35,7 @@ The script is fully operational, yet it holds the potential for several future u
 * **Develop a Graphical User Interface (GUI)**: Crafting a user-friendly GUI would greatly enrich the overall user
   interaction, making the tool more accessible to a wider audience.
 
-#### How to Contribute
+### How to Contribute
 
 Contributions are always welcome! Here's how you can get involved:
 
@@ -46,10 +45,8 @@ Contributions are always welcome! Here's how you can get involved:
 
 We appreciate your contributions and feedback to make this project better!
 
-#### License
+### License
 
 This project is released without a license. You are free to use it for any purpose.
 
 **Happy Coding!**
-
-
